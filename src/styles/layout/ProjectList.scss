@@ -1,0 +1,143 @@
+@import '../core/variables';
+@import '../core/mediaqueries';
+
+.project {
+  &_list {
+    width: 100%;
+    margin: 15px;
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 50px;
+
+    @include mediaTablet() {
+      padding: 50px 50px 50px 50px;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    @include mediaDesktop() {
+      padding: 50 150px 50 150px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &-item {
+      &--card {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 16px;
+        box-shadow: 3px 4px 3px 0px #b9b8b8;
+        border: solid 1px rgb(178, 177, 177);
+
+        @include mediaTablet() {
+          width: 300px;
+          height: 300px;
+        }
+        @include mediaDesktop() {
+          width: 312px;
+        }
+      }
+      &--img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+        margin-top: 10px;
+        border-radius: 16px;
+        @include mediaTablet() {
+        }
+      }
+      &--info {
+        width: 100%;
+        margin: 0 0 0px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5px;
+        @include mediaTablet() {
+          margin: 0 0 0px 60px;
+        }
+      }
+
+      &--title {
+        font-family: $titleFont;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      &--text {
+        font-family: $mainFont;
+        font-weight: 300;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px;
+      }
+      &--links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+        @include mediaTablet() {
+          transform: translateX(100px);
+        }
+      }
+      &--icon {
+        cursor: pointer;
+        padding: 5px;
+      }
+    }
+  }
+}
+#light .project_list-item--card {
+  background-color: white;
+  color: $darkColor1;
+}
+
+#dark .project_list-item--card {
+  background-color: #060a13;
+  color: whitesmoke;
+}
+.project_list-item .fa-github-alt,
+.fa-desktop {
+  font-size: 20px;
+
+  /* transform: translate(100px, 20px); */
+}
+
+#light .project_list-item--title {
+  color: $darkColor1;
+}
+
+#dark .project_list-item--title {
+  color: $secondColor;
+}
+
+#light .fa-github-alt,
+#light .fa-desktop {
+  color: $darkColor1;
+  &:visited {
+    color: $darkColor1;
+  }
+  &:hover {
+    color: $highLight2;
+  }
+}
+
+#dark .fa-github-alt,
+#dark .fa-desktop {
+  color: whitesmoke;
+  &:visited {
+    color: whitesmoke;
+  }
+  &:hover {
+    color: $secondColor;
+  }
+}

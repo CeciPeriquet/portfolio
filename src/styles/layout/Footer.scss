@@ -1,0 +1,50 @@
+@import '../core/variables';
+@import '../core/mediaqueries';
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  /* left: calc(50% - 90px); */
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-family: $mainFont;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mediaTablet() {
+    bottom: 0px;
+    font-size: 12px;
+  }
+
+  @include mediaBigDesktop() {
+    font-size: 14px;
+  }
+  &_text {
+    bottom: 20px;
+  }
+  &_heart {
+    color: $secondColor;
+  }
+}
+
+#light .footer {
+  background-color: whitesmoke;
+  color: $darkColor1;
+}
+
+#dark .footer {
+  background-color: $darkColor1;
+  color: whitesmoke;
+}
+/* 
+#light .footer-text {
+  color: $darkColor1;
+}
+
+#dark .footer-text {
+  color: whitesmoke;
+} */

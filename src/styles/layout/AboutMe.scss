@@ -1,0 +1,39 @@
+@import '../core/variables';
+@import '../core/mediaqueries';
+
+.aboutme {
+  width: 80%;
+  height: 400px;
+
+  &-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &-img {
+    width: 260px;
+    height: 260px;
+    object-fit: contain;
+    /*   overflow: hidden; */
+    border-radius: 20px;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  &-text {
+    font-family: $mainFont;
+    line-height: 25px;
+  }
+}
+#light .aboutme {
+  color: $darkColor1;
+}
+
+#dark .aboutme {
+  color: whitesmoke;
+}

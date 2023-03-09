@@ -1,0 +1,112 @@
+@import '../core/variables';
+@import '../core/mediaqueries';
+
+.header {
+  width: 100%;
+  /* height: 30%; */
+  /* margin-top: 18px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  @include mediaTablet() {
+    /* padding-top: 30px; */
+    gap: 200px;
+  }
+  &_menu {
+    font-family: $mainFont;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 27px;
+  }
+}
+#light .header {
+  color: $darkColor1;
+}
+
+#dark .header {
+  color: whitesmoke;
+}
+
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  height: 70px;
+  min-height: 70px;
+}
+.nav-link {
+  padding: 5px;
+
+  cursor: pointer;
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: $secondColor;
+  }
+}
+.nav ul li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  @include mediaTablet() {
+    width: 100px;
+  }
+}
+.nav ul li:hover:after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  background: $secondColor;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  left: calc(51% - 9px);
+}
+
+.active {
+  font-weight: bold;
+}
+
+.fa-brands {
+  font-size: 30px;
+  padding: 5px;
+
+  /* &:hover {
+    color: $highLight1;
+  } */
+}
+#light .fa-brands {
+  color: $darkColor1;
+  &:hover {
+    color: $highLight1;
+  }
+}
+
+#dark .fa-brands {
+  color: whitesmoke;
+  &:hover {
+    color: $highLight2;
+  }
+}
+.socialmedia {
+  width: 100%;
+
+  &-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.switch {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  &-label {
+    font-family: $mainFont;
+  }
+}

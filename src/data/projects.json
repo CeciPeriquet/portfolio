@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "type": "React",
+    "name": "Rick and Morty",
+    "desc": "React · HTML5 · Sass",
+    "kind": "Personal project",
+    "img": "img/rick-and-morty.png",
+    "repoURL": "https://github.com/CeciPeriquet/Rick-and-Morty-character-browser",
+    "webURL": "https://ceciperiquet.github.io/Rick-and-Morty-character-browser/"
+  },
+  {
+    "id": 2,
+    "type": "JavaScript",
+    "name": "Travel Plan",
+    "desc": "JavaScript · HTML5 · Sass",
+    "kind": "Personal project",
+    "img": "img/travel-plan.png",
+    "repoURL": "https://github.com/CeciPeriquet/Travel-plan-with-Javascript",
+    "webURL": "https://ceciperiquet.github.io/Travel-plan-with-Javascript/"
+  },
+  {
+    "id": 3,
+    "type": "React",
+    "name": "Star Cards",
+    "desc": "React · HTML5 · Sass",
+    "kind": "Team project",
+    "img": "img/star-cards.png",
+    "repoURL": "https://github.com/CeciPeriquet/Star-Cards",
+    "webURL": "https://ceciperiquet.github.io/Star-Cards/"
+  },
+  {
+    "id": 4,
+    "type": "HTML-CSS",
+    "name": "Flex Ladies",
+    "desc": "HTML5 · Sass",
+    "kind": "Team project",
+    "img": "img/flex-ladies.png",
+    "repoURL": "https://github.com/CeciPeriquet/Flex-Ladies",
+    "webURL": "https://ceciperiquet.github.io/Flex-Ladies/"
+  },
+
+  {
+    "id": 5,
+    "type": "JavaScript",
+    "name": "Kitty Finder a memory game",
+    "desc": "JavaScript · HTML5 · CSS3",
+    "kind": "Personal project",
+    "img": "img/kitty-finder.png",
+    "repoURL": "https://github.com/CeciPeriquet/javascript-memory-game",
+    "webURL": "https://ceciperiquet.github.io/javascript-memory-game/"
+  },
+  {
+    "id": 6,
+    "type": "JavaScript",
+    "name": "Awesome Women Cards",
+    "desc": "JavaScript · HTML5 · Sass",
+    "kind": "Team project",
+    "img": "img/awesome-women-cards.png",
+    "repoURL": "https://github.com/CeciPeriquet/Awesome-Women-Cards",
+    "webURL": "https://ceciperiquet.github.io/Awesome-Women-Cards/"
+  },
+  {
+    "id": 7,
+    "type": "JavaScript",
+    "name": "Rings of Power",
+    "desc": "JavaScript · HTML5 · CSS3",
+    "kind": "Personal project",
+    "img": "img/rings-of-power.png",
+    "repoURL": "https://github.com/CeciPeriquet/the-rings-of-power",
+    "webURL": "https://ceciperiquet.github.io/the-rings-of-power/"
+  },
+  {
+    "id": 8,
+    "type": "JavaScript",
+    "name": "JavaScript Drum Kit",
+    "desc": "JavaScript · HTML5 · CSS3",
+    "kind": "Personal project",
+    "img": "img/javascript-drum-kit.png",
+    "repoURL": "https://github.com/CeciPeriquet/javascript-drum-kit",
+    "webURL": "https://ceciperiquet.github.io/javascript-drum-kit/"
+  },
+  {
+    "id": 9,
+    "type": "JavaScript",
+    "name": "Playing with CSS",
+    "desc": "JavaScript · HTML5 · CSS3",
+    "kind": "Personal project",
+    "img": "img/playing-with-css.png",
+    "repoURL": "https://github.com/CeciPeriquet/javascript-playing-with-css",
+    "webURL": "https://ceciperiquet.github.io/javascript-playing-with-css/"
+  }
+]

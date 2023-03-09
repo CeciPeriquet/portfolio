@@ -1,0 +1,82 @@
+@import '../core/variables';
+@import '../core/mediaqueries';
+
+.stackandskills {
+  padding-top: 10px;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  @include mediaTablet() {
+    height: 400px;
+    gap: 10px;
+  }
+}
+.stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  &_list {
+    font-family: $mainFont;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    @include mediaTablet() {
+      width: 600px;
+    }
+  }
+  &_element {
+  }
+}
+
+.skills {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  @include mediaTablet() {
+    height: 400px;
+  }
+  &_list {
+    font-family: $mainFont;
+    text-align: center;
+    /*  width: 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    /* flex-wrap: wrap; */
+    @include mediaTablet() {
+      width: 600px;
+    }
+  }
+  &_element {
+    list-style-type: circle;
+    text-align: left;
+  }
+}
+
+#light .stackandskills {
+  background-color: whitesmoke;
+  color: $darkColor1;
+}
+
+#dark .stackandskills {
+  background-color: $darkColor1;
+  color: whitesmoke;
+}

@@ -1,0 +1,14 @@
+@import '../core/variables';
+@import '../core/mediaqueries';
+
+.contact {
+  width: 100%;
+  height: 300px;
+}
+#light .contact {
+  color: $darkColor1;
+}
+
+#dark .contact {
+  color: whitesmoke;
+}
