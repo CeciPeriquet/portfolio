@@ -1,24 +1,27 @@
-@import '../core/variables';
-@import '../core/mediaqueries';
+@import "../core/variables";
+@import "../core/mediaqueries";
 
 .header {
   width: 100%;
-  /* height: 30%; */
-  /* margin-top: 18px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 50px;
   @include mediaTablet() {
-    /* padding-top: 30px; */
-    gap: 200px;
+    justify-content: space-between;
+    /* gap: 100px; */
   }
   &_menu {
     font-family: $mainFont;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     gap: 15px;
     margin-top: 27px;
+    @include mediaTablet() {
+      flex-direction: row;
+      gap: 5px;
+    }
   }
 }
 #light .header {
@@ -57,7 +60,7 @@
   }
 }
 .nav ul li:hover:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 18px;
   background: $secondColor;
@@ -74,10 +77,6 @@
 .fa-brands {
   font-size: 30px;
   padding: 5px;
-
-  /* &:hover {
-    color: $highLight1;
-  } */
 }
 #light .fa-brands {
   color: $darkColor1;
@@ -93,18 +92,16 @@
   }
 }
 .socialmedia {
-  width: 100%;
-
   &-list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
 .switch {
   display: flex;
   gap: 10px;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   &-label {
     font-family: $mainFont;
