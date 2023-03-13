@@ -1,5 +1,5 @@
-@import '../core/variables';
-@import '../core/mediaqueries';
+@import "../core/variables";
+@import "../core/mediaqueries";
 .main_info {
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@
 }
 .dot-collision::before,
 .dot-collision::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 0;

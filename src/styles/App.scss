@@ -1,5 +1,5 @@
-@import 'core/variables';
-@import 'core/mediaqueries';
+@import "core/variables";
+@import "core/mediaqueries";
 
 * {
   box-sizing: border-box;
@@ -34,6 +34,7 @@
   @include mediaTablet() {
     text-align: left;
     margin-left: 30px;
+    margin-bottom: 20px;
   }
 }
 #dark .section_title {

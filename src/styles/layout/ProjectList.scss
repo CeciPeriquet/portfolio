@@ -1,5 +1,5 @@
-@import '../core/variables';
-@import '../core/mediaqueries';
+@import "../core/variables";
+@import "../core/mediaqueries";
 
 .project {
   &_list {
@@ -18,7 +18,7 @@
       gap: 30px;
     }
     @include mediaDesktop() {
-      padding: 50 150px 50 150px;
+      padding: 50px 150px 50px 150px;
       grid-template-columns: 1fr 1fr 1fr;
     }
     &-item {

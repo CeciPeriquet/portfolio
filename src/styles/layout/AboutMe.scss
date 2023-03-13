@@ -1,22 +1,40 @@
-@import '../core/variables';
-@import '../core/mediaqueries';
+@import "../core/variables";
+@import "../core/mediaqueries";
 
 .aboutme {
   width: 80%;
-  height: 400px;
+  height: auto;
+  margin: 15px;
+
+  @include mediaTablet() {
+    width: 100%;
+  }
 
   &-info {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    @include mediaTablet() {
+      padding: 50px 50px 50px 50px;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 40px;
+    }
+    @include mediaDesktop() {
+      padding: 50px 150px 50px 150px;
+    }
   }
   &-img {
+    background-image: url(../../images/perfil_ceci_tiny.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 260px;
     height: 260px;
-    object-fit: contain;
-    /*   overflow: hidden; */
-    border-radius: 20px;
+    border-radius: 50%;
   }
   &-list {
     display: flex;
@@ -26,6 +44,7 @@
     gap: 10px;
   }
   &-text {
+    list-style: circle;
     font-family: $mainFont;
     line-height: 25px;
   }
