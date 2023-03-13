@@ -1,14 +1,13 @@
 import "../styles/layout/AboutMe.scss";
-//import profilePic from "../images/perfil_ceci_tiny.JPG";
+
 function AboutMe(props) {
   return (
     <>
-      <section className="aboutme" id="aboutme">
-        <h3 className="section_title left" id="aboutme">
+      <section className="aboutme left" id="aboutme">
+        <h3 className="section_title" id="aboutme">
           about me
         </h3>
         <article className="aboutme-info">
-          {/* <img src={profilePic} alt="" className="aboutme-img" /> */}
           <div className="aboutme-img"></div>
           <div className="aboutme-text-container">
             <ul className="aboutme-list">
