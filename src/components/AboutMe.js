@@ -18,7 +18,12 @@ function AboutMe(props) {
 
         <ul className="aboutme-list">
           <li className="aboutme-list-item-left">
-            <img src={hello} alt="" className="aboutme-img" />
+            <img
+              className="aboutme-img img-left"
+              src={hello}
+              alt="Me as a little child"
+            />
+
             <p className="aboutme-text">
               Hi there, I’m Cecilia, a junior front-end developer. In fact,
               everybody calls me Ceci, only my Mum (when she’s angry at me)
@@ -28,7 +33,11 @@ function AboutMe(props) {
             </p>
           </li>
           <li className="aboutme-list-item-right">
-            <img src={dogs} alt="" className="aboutme-img " />
+            <img
+              src={dogs}
+              alt="Me, kissing a dog"
+              className="aboutme-img img-right"
+            />
             <p className="aboutme-text">
               I’m half Spanish, quarter French and quarter English. I was born
               in Madrid, but I’ve lived in Tenerife, Valencia, London and now
@@ -39,7 +48,11 @@ function AboutMe(props) {
             </p>
           </li>
           <li className="aboutme-list-item-left">
-            <img src={photographer} alt="" className="aboutme-img " />
+            <img
+              src={photographer}
+              alt="Me, holding a camera and making pics"
+              className="aboutme-img img-left"
+            />
             <p className="aboutme-text">
               I’ve got a Bachelor Degree in Media and Communication, and some
               design courses. I’ve worked in TV for the past few years (making
@@ -51,7 +64,11 @@ function AboutMe(props) {
           </li>
 
           <li className="aboutme-list-item-right">
-            <img src={playing} alt="" className="aboutme-img " />
+            <img
+              src={playing}
+              alt="Me, playing a guitar"
+              className="aboutme-img img-right"
+            />
             <p className="aboutme-text">
               As a hobby I used to make music photography, then I decided I also
               wanted to be in the pictures so I had a few bands as well (I
@@ -63,12 +80,28 @@ function AboutMe(props) {
             </p>
           </li>
           <li className="aboutme-list-item-solo">
-            <img src={art} alt="" className="aboutme-img " />
-            <img src={press} alt="" className="aboutme-img " />
-            <img src={posters} alt="" className="aboutme-img " />
+            <img
+              src={art}
+              alt="Me, selling tote bags and other illustrated stuff"
+              className="aboutme-img "
+            />
+            <img
+              src={press}
+              alt="A band posing for me, published on the press"
+              className="aboutme-img "
+            />
+            <img
+              src={posters}
+              alt="Some of my music poster designs"
+              className="aboutme-img "
+            />
           </li>
           <li className="aboutme-list-item-left">
-            <img src={talking} alt="" className="aboutme-img " />
+            <img
+              src={talking}
+              alt="Me, talking, moving my hands except when I'm holding a beer"
+              className="aboutme-img img-left"
+            />
             <p className="aboutme-text">
               Right now I edit a collaborative zine, that allows me to meet and
               connect writers and illustrators (and I also write and draw

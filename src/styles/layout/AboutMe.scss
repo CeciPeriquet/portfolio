@@ -2,6 +2,7 @@
 @import "../core/mediaqueries";
 
 .aboutme {
+  border-radius: 30px;
   width: 80%;
   height: auto;
   margin: 15px;
@@ -75,7 +76,12 @@
     }
   }
 }
-
+.img-right {
+  transform: rotate(6deg);
+}
+.img-left {
+  transform: rotate(-6deg);
+}
 /* .nopics {
   @include mediaTablet() {
     width: 80%;
@@ -90,8 +96,10 @@
 } */
 #light .aboutme {
   color: $darkColor1;
+  background-color: $softPurple;
 }
 
 #dark .aboutme {
   color: whitesmoke;
+  background-color: $highLight1;
 }
