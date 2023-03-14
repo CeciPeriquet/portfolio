@@ -11,51 +11,83 @@
     padding: 30px 30px 30px 30px;
   }
   @include mediaDesktop() {
-    padding: 50px 130px 50px 130px;
+    max-width: 900px;
+  }
+  @include mediaBigDesktop() {
+    max-width: 1200px;
   }
 
-  &-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    @include mediaDesktop() {
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 40px;
-    }
-  }
-  &-img {
-    background-image: url(../../images/perfil_ceci_tiny.JPG);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-  }
   &-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
-  }
-  &-text {
-    list-style: circle;
-    font-family: $mainFont;
-    line-height: 25px;
-    &-container {
-      width: 60%;
+    @include mediaTablet() {
+      gap: 0px;
+    }
+
+    &-item-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       @include mediaTablet() {
-        width: 80%;
+        flex-direction: row;
+        margin-right: 35px;
+      }
+    }
+    &-item-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include mediaTablet() {
+        flex-direction: row-reverse;
+        margin-left: 35px;
+      }
+    }
+    &-item-solo {
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include mediaTablet() {
+        flex-direction: row;
       }
     }
   }
+
+  &-img {
+    width: 250px;
+    @include mediaDesktop() {
+      width: 300px;
+    }
+  }
+  &-text {
+    font-family: $mainFont;
+    line-height: 25px;
+
+    @include mediaTablet() {
+      width: 60%;
+    }
+  }
 }
+
+/* .nopics {
+  @include mediaTablet() {
+    width: 80%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  @include mediaDesktop() {
+    width: 90%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+} */
 #light .aboutme {
   color: $darkColor1;
 }
