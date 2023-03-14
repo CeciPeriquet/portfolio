@@ -18,6 +18,7 @@ import ProjectList from "./ProjectList";
 import Footer from "./Footer";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import BackToTopArrow from "./BackToTopArrow";
 
 export const ThemeContext = createContext(null);
 //FUNCTION
@@ -39,6 +40,7 @@ function App() {
           <AboutMe></AboutMe>
           <Skills></Skills>
           <Contact></Contact>
+          <BackToTopArrow></BackToTopArrow>
         </main>
         <Footer></Footer>
       </div>

@@ -1,0 +1,52 @@
+@import "../core/variables";
+@import "../core/mediaqueries";
+
+.back-arrow {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: $secondColor;
+  position: fixed;
+  bottom: 50px;
+  right: 35px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  box-shadow: 2px 3px 3px 0px #585757;
+
+  @include mediaTablet() {
+    right: 35px;
+  }
+  @include mediaDesktop() {
+  }
+}
+.hidden {
+  display: none;
+}
+
+.pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+/* .back-arrow .visible {
+  display: block;
+  opacity: 1;
+} */
+
+#light .fa-arrow-up {
+  color: whitesmoke;
+}
+
+#dark .fa-arrow-up {
+  color: $darkColor1;
+}
