@@ -5,7 +5,8 @@ function Footer(props) {
     <>
       <footer className="footer">
         <p className="footer_text ">
-          &copy; cecilia periquet <span class="footer_heart"> ❤︎ </span> 2023
+          &copy; cecilia periquet <span className="footer_heart"> ❤︎ </span>{" "}
+          2023
         </p>
       </footer>
     </>

@@ -23,7 +23,7 @@ function BackToTopArrow(props) {
       className={`pulse back-arrow ${isVisible ? "" : "hidden"}`}
       onClick={handleClick}
     >
-      <i class="fa-solid fa-arrow-up"></i>
+      <i className="fa-solid fa-arrow-up"></i>
     </div>
   );
 }

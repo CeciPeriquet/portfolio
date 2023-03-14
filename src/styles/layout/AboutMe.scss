@@ -3,6 +3,7 @@
 
 .aboutme {
   border-radius: 30px;
+  padding: 20px;
   width: 80%;
   height: auto;
   margin: 15px;
@@ -77,10 +78,14 @@
   }
 }
 .img-right {
-  transform: rotate(6deg);
+  @include mediaTablet() {
+    transform: rotate(6deg);
+  }
 }
 .img-left {
-  transform: rotate(-6deg);
+  @include mediaTablet() {
+    transform: rotate(-6deg);
+  }
 }
 /* .nopics {
   @include mediaTablet() {

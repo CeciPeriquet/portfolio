@@ -4,21 +4,25 @@
 .header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 50px;
   @include mediaTablet() {
-    justify-content: space-between;
-    /* gap: 100px; */
+    justify-content: space-around;
+    /* gap: 10px; */
   }
   &_menu {
-    font-family: $mainFont;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 15px;
-    margin-top: 27px;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    left: 5%;
+    top: 70px;
     @include mediaTablet() {
+      position: relative;
+      left: 0;
+      top: 11px;
       flex-direction: row;
       gap: 5px;
     }
@@ -31,16 +35,33 @@
 #dark .header {
   color: whitesmoke;
 }
+.mobile-nav {
+  margin-top: 80px;
+  font-family: $mainFont;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-.nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 2;
-  height: 70px;
-  min-height: 70px;
+  @include mediaTablet() {
+    display: none;
+  }
+  &-icon {
+    position: absolute;
+    left: 5%;
+    top: 20px;
+    color: $darkColor1;
+    cursor: pointer;
+    &:hover {
+      color: $secondColor;
+    }
+    @include mediaTablet() {
+      display: none;
+    }
+  }
 }
-.nav-link {
+
+.mobile-nav .nav-link {
   padding: 5px;
 
   cursor: pointer;
@@ -51,23 +72,52 @@
     color: $secondColor;
   }
 }
-.nav ul li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
+
+.regnav {
+  font-family: $mainFont;
+  display: none;
   @include mediaTablet() {
+    display: flex;
+    gap: 5px;
+    margin-top: 27px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    height: 70px;
+    min-height: 70px;
+  }
+}
+.regnav .nav-link {
+  padding: 5px;
+
+  cursor: pointer;
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: $secondColor;
+  }
+}
+.regnav ul li {
+  @include mediaTablet() {
+    display: inline-block;
+    position: relative;
+    text-align: center;
     width: 100px;
   }
 }
-.nav ul li:hover:after {
-  content: "";
-  position: absolute;
-  top: 18px;
-  background: $secondColor;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  left: calc(51% - 9px);
+.regnav ul li:hover:after {
+  @include mediaTablet() {
+    content: "";
+    position: absolute;
+    top: 18px;
+    background: $secondColor;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    left: calc(51% - 9px);
+  }
 }
 
 .active {
@@ -99,11 +149,16 @@
 }
 
 .switch {
+  transform: translateX(40px);
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
   &-label {
     font-family: $mainFont;
+  }
+
+  @include mediaTablet() {
+    transform: translateX(-20px);
   }
 }
