@@ -50,14 +50,25 @@
     position: absolute;
     left: 5%;
     top: 20px;
-    color: $darkColor1;
+
     cursor: pointer;
-    &:hover {
-      color: $secondColor;
-    }
+
     @include mediaTablet() {
       display: none;
     }
+  }
+}
+
+#light .mobile-nav-icon {
+  color: $darkColor1;
+  &:hover {
+    color: $secondColor;
+  }
+}
+#dark .mobile-nav-icon {
+  color: whitesmoke;
+  &:hover {
+    color: $secondColor;
   }
 }
 
