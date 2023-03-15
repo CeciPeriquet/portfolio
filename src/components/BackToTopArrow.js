@@ -19,11 +19,13 @@ function BackToTopArrow(props) {
     });
   };
   return (
-    <div
-      className={`pulse back-arrow ${isVisible ? "" : "hidden"}`}
-      onClick={handleClick}
-    >
-      <i className="fa-solid fa-arrow-up"></i>
+    <div className="back-arrow-container">
+      <div
+        className={`pulse back-arrow ${isVisible ? "" : "hidden"}`}
+        onClick={handleClick}
+      >
+        <i className="fa-solid fa-arrow-up"></i>
+      </div>
     </div>
   );
 }

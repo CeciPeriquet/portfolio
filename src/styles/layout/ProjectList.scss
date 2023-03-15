@@ -2,6 +2,21 @@
 @import "../core/mediaqueries";
 
 .project {
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  margin: 15px;
+
+  @include mediaTablet() {
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+  }
+  @include mediaDesktop() {
+    max-width: 900px;
+  }
+  @include mediaBigDesktop() {
+    max-width: 1200px;
+  }
   &_list {
     width: 100%;
     margin: 15px;

@@ -1,9 +1,9 @@
-@import '../core/variables';
-@import '../core/mediaqueries';
+@import "../core/variables";
+@import "../core/mediaqueries";
 
 .stackandskills {
   padding-top: 10px;
-  width: 100%;
+  width: 80%;
   height: 550px;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,16 @@
   align-items: center;
   gap: 20px;
   @include mediaTablet() {
+    width: 100%;
+    padding: 30px 30px 30px 30px;
     height: 400px;
     gap: 10px;
+  }
+  @include mediaDesktop() {
+    max-width: 900px;
+  }
+  @include mediaBigDesktop() {
+    max-width: 1200px;
   }
 }
 .stack {
@@ -42,7 +50,6 @@
 
 .skills {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
