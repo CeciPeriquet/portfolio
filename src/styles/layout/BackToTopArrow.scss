@@ -1,14 +1,15 @@
 @import "../core/variables";
 @import "../core/mediaqueries";
 
-.back-arrow-container {
+/* .back-arrow-container {
   position: fixed;
   bottom: 55px;
   right: 10%;
   z-index: 999;
-}
+} */
 .back-arrow {
   cursor: pointer;
+  padding: 5px;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -17,13 +18,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 22px;
   box-shadow: 2px 3px 3px 0px #585757;
 
   @include mediaTablet() {
-    right: 35px;
-  }
-  @include mediaDesktop() {
+    margin-right: 10px;
   }
 }
 .hidden {

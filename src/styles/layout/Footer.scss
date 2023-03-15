@@ -2,21 +2,21 @@
 @import "../core/mediaqueries";
 
 .footer {
+  width: 80%;
   position: fixed;
-  bottom: 0px;
-  right: 10%;
-  /* left: calc(50% - 90px); */
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  text-transform: capitalize;
-  font-family: $mainFont;
-  font-size: 10px;
+  bottom: 1%;
+  left: 0px;
   display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: space-around;
   align-items: center;
+  gap: 20px;
   @include mediaTablet() {
-    font-size: 12px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
   }
   @include mediaDesktop() {
     max-width: 900px;
@@ -24,22 +24,38 @@
 
   @include mediaBigDesktop() {
     max-width: 1200px;
-    font-size: 14px;
+  }
+  &-info {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &_text {
-    bottom: 20px;
+    text-transform: capitalize;
+    font-family: $mainFont;
+    font-size: 10px;
+    /* bottom: 20px; */
+    @include mediaTablet() {
+      font-size: 12px;
+    }
+    @include mediaBigDesktop() {
+      font-size: 14px;
+    }
   }
   &_heart {
     color: $secondColor;
   }
 }
 
-#light .footer {
+#light .footer-info {
   background-color: whitesmoke;
   color: $darkColor1;
 }
 
-#dark .footer {
+#dark .footer-info {
   background-color: $darkColor1;
   color: whitesmoke;
 }
