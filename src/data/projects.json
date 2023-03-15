@@ -89,5 +89,15 @@
     "img": "img/playing-with-css.png",
     "repoURL": "https://github.com/CeciPeriquet/javascript-playing-with-css",
     "webURL": "https://ceciperiquet.github.io/javascript-playing-with-css/"
+  },
+  {
+    "id": 10,
+    "type": "JavaScript",
+    "name": "JavaScript Clock",
+    "desc": "JavaScript · HTML5 · CSS3",
+    "kind": "Personal project",
+    "img": "img/js-clock.png",
+    "repoURL": "https://github.com/CeciPeriquet/javascript-css-clock",
+    "webURL": "https://ceciperiquet.github.io/javascript-css-clock/"
   }
 ]
