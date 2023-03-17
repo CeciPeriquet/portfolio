@@ -154,24 +154,26 @@ function Info(props) {
 
   return (
     <>
-      <div className="main_info">
-        <div className="main_info-logo">
-          <div className="main_info-logo-eyes">
-            <div className="eye"></div>
-            <div className="eye"></div>
+      <section className="info-container">
+        <div className="main_info">
+          <div className="main_info-logo">
+            <div className="main_info-logo-eyes">
+              <div className="eye"></div>
+              <div className="eye"></div>
+            </div>
+            {logoMode()}
           </div>
-          {logoMode()}
+          <h2 className="main_info-name">cecilia periquet</h2>
+          <h1 className="main_info-title">front-end developer</h1>
         </div>
-        <h2 className="main_info-name">cecilia periquet</h2>
-        <h1 className="main_info-title">front-end developer</h1>
-      </div>
-      <div className="dots col-3">
-        <div className="snippet" data-title="dot-collision">
-          <div className="stage">
-            <div className="dot-collision"></div>
+        <div className="dots col-3">
+          <div className="snippet" data-title="dot-collision">
+            <div className="stage">
+              <div className="dot-collision"></div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
