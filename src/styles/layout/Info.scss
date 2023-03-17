@@ -2,6 +2,7 @@
 @import "../core/mediaqueries";
 
 .info-container {
+  margin: 30px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +26,7 @@
     font-family: $mainFont;
     text-transform: capitalize;
     font-size: 20px;
-    transform: translate(70px, -18px);
+    transform: translate(-1px, -18px);
     color: $secondColor;
     @include mediaTablet() {
       font-size: 30px;
@@ -36,7 +37,7 @@
     width: 300px;
     font-family: $titleFont;
     font-size: 50px;
-    line-height: 35px;
+    line-height: 39px;
     text-align: center;
     font-weight: bold;
     transform: translateY(-15px);
@@ -49,15 +50,15 @@
   }
 }
 .main_info-logo {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   @include mediaTablet() {
     margin-bottom: 30px;
     transform: translate(20px, -6px);
   }
   &-img {
-    height: 150px;
-    width: 86px;
-    transform: translate(171px, 0px);
+    height: 180px;
+    width: 100px;
+    transform: translate(63px, 0px);
 
     @include mediaTablet() {
       width: 200px;
@@ -68,8 +69,8 @@
   &-eyes {
     display: flex;
     justify-content: center;
-    gap: 13px;
-    transform: translate(47px, 63px);
+    gap: 15px;
+    transform: translate(42px, 76px);
     position: relative;
     z-index: 999;
 
@@ -81,7 +82,7 @@
 }
 
 .eye {
-  width: 8px;
+  width: 7px;
   height: 10px;
   border-radius: 50%;
   transform-origin: 100%;
