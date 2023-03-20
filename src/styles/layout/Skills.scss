@@ -2,9 +2,10 @@
 @import "../core/mediaqueries";
 
 .stackandskills {
+  margin: 10px;
   padding-top: 10px;
   width: 80%;
-  height: 550px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +14,7 @@
   @include mediaTablet() {
     width: 100%;
     padding: 30px 30px 30px 30px;
-    height: 400px;
+    /* height: 400px; */
     gap: 10px;
   }
   @include mediaDesktop() {
@@ -44,38 +45,29 @@
       width: 600px;
     }
   }
-  &_element {
-  }
 }
-
-.skills {
-  width: 100%;
+.other {
+  width: 80%;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  @include mediaTablet() {
-    height: 400px;
-  }
-  &_list {
-    font-family: $mainFont;
-    text-align: center;
-    /*  width: 300px; */
+  align-items: flex-start;
+  gap: 10px;
+  &-list {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
-    gap: 15px;
-    /* flex-wrap: wrap; */
-    @include mediaTablet() {
-      width: 600px;
+    gap: 10px;
+    &-element {
+      font-family: $mainFont;
+      list-style-type: circle;
+      text-align: left;
+      line-height: 20px;
     }
   }
-  &_element {
-    list-style-type: circle;
-    text-align: left;
-  }
+}
+.other h4 {
+  font-family: $mainFont;
 }
 
 #light .stackandskills {

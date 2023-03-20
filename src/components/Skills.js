@@ -1,33 +1,41 @@
-import myStack from '../data/myStack';
-import mySkills from '../data/mySkills';
-import '../styles/layout/Skills.scss';
+import myStack from "../data/myStack";
+
+import "../styles/layout/Skills.scss";
 function Skills(props) {
   const techStack = myStack.map((eachTech) => (
-    <li key={eachTech} className='stack_element'>
+    <li key={eachTech} className="stack_element">
       <p>
         {eachTech} <span> | </span>
       </p>
     </li>
   ));
-  const softSkills = mySkills.map((eachSkill) => (
-    <li key={eachSkill} className='skills_element'>
-      {eachSkill}
-    </li>
-  ));
 
   return (
     <>
-      <section className='stackandskills' id='skills'>
-        <section className='stack'>
-          <h3 className='section_title'>tech & stack</h3>
+      <section className="stackandskills" id="skills">
+        <section className="stack">
+          <h3 className="section_title">tech stack</h3>
           <div>
-            <ul className='stack_list'>{techStack}</ul>
+            <ul className="stack_list">{techStack}</ul>
           </div>
-        </section>
-        <section className='skills'>
-          <h3 className='section_title'>soft skills</h3>
-          <div>
-            <ul className='skills_list'>{softSkills}</ul>
+          <div className="other">
+            <h4>Other things you may want to know:</h4>
+            <ul className="other-list">
+              <li className="other-list-element">
+                Right now: I'm learning <strong>TypeScript </strong>and
+                improving "the basis" with <strong>Vanilla JavaScript</strong>{" "}
+                challenges.
+              </li>
+              <li className="other-list-element">
+                I love <strong>React JS</strong>, but I'd like to learn Angular
+                as well.
+              </li>
+              <li className="other-list-element">
+                I'm also very interested in <strong> "Creative coding" </strong>
+                (like p5 js) and animation libraries such as
+                <strong> Gsap</strong>.
+              </li>
+            </ul>
           </div>
         </section>
       </section>

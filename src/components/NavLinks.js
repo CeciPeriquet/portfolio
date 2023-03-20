@@ -20,7 +20,7 @@ function NavLinks(props) {
       </li>
       <li>
         <Link activeClass="active" smooth spy to="skills" className="nav-link">
-          skills
+          tech stack
         </Link>
       </li>
       <li>
