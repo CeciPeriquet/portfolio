@@ -37,6 +37,7 @@
       @include mediaTablet() {
         flex-direction: row;
         margin-right: 35px;
+        gap: 10px;
       }
     }
     &-item-right {
@@ -47,6 +48,7 @@
       @include mediaTablet() {
         flex-direction: row-reverse;
         margin-left: 35px;
+        gap: 10px;
       }
     }
     &-item-solo {
