@@ -13,29 +13,29 @@ function Skills(props) {
   return (
     <>
       <section className="stackandskills" id="skills">
+        <h3 className="section_title left">tech stack</h3>
         <section className="stack">
-          <h3 className="section_title">tech stack</h3>
           <div>
             <ul className="stack_list">{techStack}</ul>
           </div>
           <div className="other">
             <h4>Other things you may want to know:</h4>
-            <ul className="other-list">
-              <li className="other-list-element">
-                Right now: I'm learning <strong>TypeScript </strong>and
-                improving "the basis" with <strong>Vanilla JavaScript</strong>{" "}
+            <div className="other-list">
+              <p className="other-list-element">
+                I'm learning <span>TypeScript </span>and improving "the basis"
+                with <span>Vanilla JavaScript </span>
                 challenges.
-              </li>
-              <li className="other-list-element">
-                I love <strong>React JS</strong>, but I'd like to learn Angular
-                as well.
-              </li>
-              <li className="other-list-element">
-                I'm also very interested in <strong> "Creative coding" </strong>
+              </p>
+              <p className="other-list-element">
+                I love <span>React JS</span>, but I'd like to learn Angular as
+                well.
+              </p>
+              <p className="other-list-element">
+                I'm also very interested in <span> "Creative coding" </span>
                 (like p5 js) and animation libraries such as
-                <strong> Gsap</strong>.
-              </li>
-            </ul>
+                <span> Gsap</span>.
+              </p>
+            </div>
           </div>
         </section>
       </section>
