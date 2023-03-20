@@ -35,7 +35,6 @@ function AboutMe(props) {
 
             <p className="aboutme-text">
               <strong>
-                {" "}
                 Hi there, I’m Cecilia, a junior front-end developer.{" "}
               </strong>
               I’m half Spanish, quarter French and quarter English. I was born
@@ -99,11 +98,6 @@ function AboutMe(props) {
           </li>
           <li className="aboutme-list-item-solo">
             <img
-              src={art}
-              alt="Me, selling tote bags and other illustrated stuff"
-              className="aboutme-img "
-            />
-            <img
               src={press}
               alt="A band posing for me, published on the press"
               className="aboutme-img "
@@ -129,7 +123,12 @@ function AboutMe(props) {
               able to walk).
             </p>
           </li>
-          <li className="aboutme-list-item-solo">
+          <li className="aboutme-list-item-right">
+            <img
+              src={art}
+              alt="Me, selling tote bags and other illustrated stuff"
+              className="aboutme-img img-right"
+            />
             <p className="aboutme-text">
               Anyway, I'm a newbie in Web Development but I'm happy to be a part
               of such a special, creative and supportive community. Now I just

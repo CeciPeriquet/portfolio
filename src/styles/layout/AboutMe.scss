@@ -9,10 +9,11 @@
   margin: 15px;
 
   @include mediaTablet() {
-    width: 100%;
+    width: 90%;
     padding: 30px 30px 30px 30px;
   }
   @include mediaDesktop() {
+    width: 100%;
     max-width: 900px;
   }
   @include mediaBigDesktop() {
@@ -60,6 +61,7 @@
       align-items: center;
       @include mediaTablet() {
         flex-direction: row;
+        flex-wrap: wrap;
       }
     }
   }
@@ -81,26 +83,13 @@
 }
 .img-right {
   @include mediaTablet() {
-    transform: rotate(6deg);
   }
 }
 .img-left {
   @include mediaTablet() {
-    transform: rotate(-6deg);
   }
 }
-/* .nopics {
-  @include mediaTablet() {
-    width: 80%;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  @include mediaDesktop() {
-    width: 90%;
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-} */
+
 #light .aboutme {
   color: $darkColor1;
   background-color: $softPurple;

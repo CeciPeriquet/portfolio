@@ -2,14 +2,16 @@
 @import "../core/mediaqueries";
 
 .info-container {
-  margin: 60px 10px;
+  width: 80%;
+  height: 90vh;
+  margin: 0px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
   @include mediaTablet() {
-    margin: 120px 50px;
+    margin: 0px 50px;
   }
 }
 .main_info {
