@@ -1,12 +1,12 @@
 @import "../core/variables";
 @import "../core/mediaqueries";
 
-/* .back-arrow-container {
+.back-arrow-container {
   position: fixed;
-  bottom: 55px;
+  bottom: 5%;
   right: 10%;
   z-index: 999;
-} */
+}
 .back-arrow {
   cursor: pointer;
   padding: 5px;
@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   font-size: 22px;
-  box-shadow: 2px 3px 3px 0px #585757;
+  box-shadow: 1px 1px 3px 0px #585757;
 
   @include mediaTablet() {
     margin-right: 10px;

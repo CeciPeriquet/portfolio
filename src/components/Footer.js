@@ -1,14 +1,13 @@
 import "../styles/layout/Footer.scss";
-import BackToTopArrow from "./BackToTopArrow";
 
 function Footer(props) {
   return (
     <>
-      <footer className="footer">
-        <BackToTopArrow></BackToTopArrow>
+      <footer className="footer left">
         <div className="footer-info">
           <p className="footer_text ">
-            &copy; cecilia periquet <span className="footer_heart"> ❤︎ </span>{" "}
+            &copy; designed & developed by cecilia periquet
+            <span className="footer_heart"> ❤︎ </span>
             2023
           </p>
         </div>

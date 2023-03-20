@@ -3,20 +3,13 @@
 
 .footer {
   width: 80%;
-  position: fixed;
-  bottom: 1%;
-  left: 0px;
+  margin-top: 20px;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+
   @include mediaTablet() {
     width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 10px;
   }
   @include mediaDesktop() {
     max-width: 900px;
@@ -26,9 +19,7 @@
     max-width: 1200px;
   }
   &-info {
-    width: 200px;
     height: 40px;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +41,7 @@
   }
 }
 
-#light .footer-info {
+/* #light .footer-info {
   background-color: whitesmoke;
   color: $darkColor1;
 }
@@ -58,7 +49,7 @@
 #dark .footer-info {
   background-color: $darkColor1;
   color: whitesmoke;
-}
+} */
 /* 
 #light .footer-text {
   color: $darkColor1;
