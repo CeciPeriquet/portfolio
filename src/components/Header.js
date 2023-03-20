@@ -3,6 +3,7 @@ import ReactSwitch from "react-switch";
 
 import MobileNav from "./MobileNav";
 import RegularNav from "./RegularNav";
+import SocialMedia from "./SocialMedia";
 
 function Header(props) {
   const toggleTheme = () => {
@@ -24,26 +25,7 @@ function Header(props) {
           />
         </div>
         <div className="socialmedia right">
-          <ul className="socialmedia-list ">
-            <li>
-              <a
-                href="https://github.com/CeciPeriquet"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-github-alt"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/ceciliaperiquet/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
+          <SocialMedia></SocialMedia>
         </div>
       </header>
     </>
