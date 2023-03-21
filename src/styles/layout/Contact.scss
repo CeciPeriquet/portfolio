@@ -123,7 +123,8 @@
   }
   @include mediaDesktop() {
     width: 50%;
-    height: 530px;
+    gap: 35px;
+    height: 670px;
   }
   &-title {
     display: block;
@@ -157,23 +158,30 @@
 
   &-label {
     font-weight: 300;
-    width: 70%;
+    width: 80%;
+    text-align: justify;
   }
   &-input {
     all: unset;
-    width: 250px;
+    width: 220px;
     height: 40px;
     border: 1px solid $darkColor1;
     border-radius: 10px;
     padding: 0px 10px;
+    @include mediaTablet() {
+      width: 250px;
+    }
   }
   &-textarea {
     all: unset;
-    width: 250px;
+    width: 220px;
     height: 100px;
     border: 1px solid $darkColor1;
     border-radius: 10px;
     padding: 10px;
+    @include mediaTablet() {
+      width: 250px;
+    }
   }
   &-button {
     all: unset;
@@ -187,6 +195,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  @include mediaTablet() {
+    gap: 25px;
   }
 }
 
