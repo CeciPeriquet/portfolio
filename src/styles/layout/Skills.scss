@@ -13,9 +13,8 @@
   @include mediaTablet() {
     height: auto;
     width: 100%;
-
     padding: 30px 30px 30px 30px;
-    gap: 10px;
+    gap: 40px;
   }
   @include mediaDesktop() {
     max-width: 900px;
@@ -49,15 +48,13 @@
       gap: 20px;
       font-size: 40px;
       line-height: 30px;
-
-      width: 600px;
+      margin-bottom: 50px;
+      width: 650px;
     }
   }
   &-marker {
     color: $secondColor;
     font-weight: bold;
-  }
-  &-element {
   }
 }
 .other {
@@ -80,10 +77,13 @@
     flex-wrap: wrap;
     gap: 10px;
     &-element {
-      padding: 6px;
+      padding: 10px;
       font-family: $mainFont;
       font-weight: 300;
       letter-spacing: 2px;
+      @include mediaTablet() {
+        padding-bottom: 30px;
+      }
     }
     @include mediaTablet() {
       gap: 50px;
@@ -105,16 +105,18 @@
   letter-spacing: 2px;
 
   @include mediaTablet() {
-    font-size: 80px;
+    font-size: 70px;
     line-height: 75px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
 #light .other h4 {
-  border-bottom: 3px solid $darkColor1;
+  border-bottom: 4px solid $darkColor1;
 }
 #dark .other h4 {
-  border-bottom: 3px solid $highLight2;
+  border-bottom: 4px solid $highLight2;
 }
 
 #light .stackandskills {
