@@ -43,7 +43,7 @@ function AboutMe(props) {
               fact, everybody calls me Ceci, only my Mum (when she’s angry at
               me) calls me Cecilia, but I understand it’s quite difficult to
               pronounce Ceci in other languages and even in some parts of Spain…
-              so, do as u can.
+              so, do as you can.
             </p>
           </li>
           <li className="aboutme-list-item-right">
@@ -53,13 +53,12 @@ function AboutMe(props) {
               className="aboutme-img img-right"
             />
             <p className="aboutme-text">
-              {" "}
               I learnt to speak before I was able to walk, I guess that's why I
               studied Communication. I’ve got a Bachelor's Degree in Media and
-              Communication, but I've been always passionate by design, so I
-              also made some graphic and web design courses. I really need a
-              coffee (or two) first thing in the morning. I’ve got two cats but
-              I’m the kind of person who says hi to every single dog in the
+              Communication, but I've been always passionate about design, so I
+              also made some graphic and web design courses. I really need a cup
+              of coffee (or two) first thing in the morning. I’ve got two cats
+              but I’m the kind of person who says hi to every single dog in the
               streets.
             </p>
           </li>
@@ -90,7 +89,7 @@ function AboutMe(props) {
               As a hobby I used to make music photography, then I decided I also
               wanted to be in the pictures so I had a few bands as well (I
               organized gigs, designed posters and managed social media). I also
-              like to draw, usually with markers directly into paper (so I can
+              like to draw, usually with markers directly onto paper (so I can
               make some analogue stuff and keep out of my computer, but I also
               enjoy digital illustration and design). I’ve also made some short
               films and music videos.

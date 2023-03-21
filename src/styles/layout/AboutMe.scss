@@ -75,9 +75,11 @@
   &-text {
     font-family: $mainFont;
     line-height: 25px;
+    text-align: justify;
 
     @include mediaTablet() {
       width: 60%;
+      text-align: left;
     }
   }
 }

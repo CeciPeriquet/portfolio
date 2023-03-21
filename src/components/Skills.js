@@ -5,7 +5,7 @@ function Skills(props) {
   const techStack = myStack.map((eachTech) => (
     <li key={eachTech} className="stack_element">
       <p>
-        {eachTech} <span> | </span>
+        {eachTech} <span className="stack-marker"> | </span>
       </p>
     </li>
   ));
