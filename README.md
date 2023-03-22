@@ -2,7 +2,7 @@
 
 ## Hi, there! 👋
 
-I'm still working on it, but here's my personal portfolio, where you can see a bit of what have I done and what can I do (but if you need any other thing, just let me know and I'll learn how to do it).
+I'm still working on it, but here's my personal portfolio, where you can see a bit of what I've done and what can I do (but if you need any other thing, just let me know and I'll learn how to do it).
 
 <div align="center"><img src="https://user-images.githubusercontent.com/112966265/226866164-b3893776-9834-4abd-ab52-0fc1decd485c.png" alt="Mini me" style="width:250px;height:250px;"></div>
 
