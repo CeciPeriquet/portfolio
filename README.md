@@ -38,4 +38,4 @@ Sending me a message is easy - just fill out the contact form! (I used [FromSpre
 
 ![contact-ceciperiquet](https://user-images.githubusercontent.com/112966265/226866932-a57c34f1-24d4-4d69-a911-9e49d0a04615.png)
 
-[Take a look](https://ceciperiquet.github.io/portfolio/) and tell me what you think, **_all feedback is more than welcome_** (yep, that's a bit _Spanglish_...) ❤️✨
+[Take a look](https://ceciliaperiquet.netlify.app/) and tell me what you think, **_all feedback is more than welcome_** (yep, that's a bit _Spanglish_...) ❤️✨
