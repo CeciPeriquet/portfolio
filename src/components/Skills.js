@@ -27,8 +27,8 @@ function Skills(props) {
                 challenges.
               </p>
               <p className="other-list-element">
-                I love <span>React JS</span>, but I'd like to learn Angular as
-                well.
+                I'm confortable with <span>React JS</span>, but I'm learning
+                Angular as well.
               </p>
               <p className="other-list-element">
                 I'm also very interested in <span> "Creative coding" </span>
