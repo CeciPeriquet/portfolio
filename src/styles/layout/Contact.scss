@@ -39,18 +39,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 60px;
   /* margin-bottom: 20px; */
 
   @include mediaTablet() {
-    gap: 40px;
   }
   @include mediaDesktop() {
     height: 600px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
   }
 }
 
@@ -120,6 +119,8 @@
 
   @include mediaTablet() {
     width: 80%;
+    height: 600px;
+    padding: 20px 0px 20px 0px;
     margin-bottom: 30px;
   }
   @include mediaDesktop() {
