@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.a87b1643.css",
+    "main.css": "./static/css/main.a9786754.css",
     "main.js": "./static/js/main.41f875d2.js",
     "static/media/ceci-posters.png": "./static/media/ceci-posters.ebcfee9cc9e8ae635472.png",
     "static/media/ceci-press.png": "./static/media/ceci-press.1933ebede37e9cf04bbf.png",
@@ -11,11 +11,11 @@
     "static/media/ceci-dogs.png": "./static/media/ceci-dogs.e88b156ab3c96382d852.png",
     "static/media/ceci-helloworld.png": "./static/media/ceci-helloworld.81ab0d1a5f86888eafe4.png",
     "index.html": "./index.html",
-    "main.a87b1643.css.map": "./static/css/main.a87b1643.css.map",
+    "main.a9786754.css.map": "./static/css/main.a9786754.css.map",
     "main.41f875d2.js.map": "./static/js/main.41f875d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.a87b1643.css",
+    "static/css/main.a9786754.css",
     "static/js/main.41f875d2.js"
   ]
 }
